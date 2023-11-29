@@ -82,6 +82,7 @@ body,
 }
 
 .cl-internal-b3fm6y,
-.cl-userButtonPopoverFooter {
+.cl-userButtonPopoverFooter,
+.cl-organizationSwitcherPopoverFooter {
   display: none;
 }

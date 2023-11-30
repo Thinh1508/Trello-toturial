@@ -11,7 +11,7 @@ const OrganizationLayout = ({ children }: { children: React.ReactNode }) => {
       >
         Create
       </Button>
-      <div className="flex gap-x-7 pt-2">
+      <div className="flex gap-x-7 pt-3 md:pt-2">
         <div className="w-64 shrink-0 hidden md:block">
           <Sidebar />
         </div>

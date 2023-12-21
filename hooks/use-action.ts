@@ -33,9 +33,7 @@ export const useAction = <TInput, TOutput>(
           return
         }
 
-        if (result.filedErrors) {
-          setFiledErrors(result.filedErrors)
-        }
+        setFiledErrors(result.filedErrors)
 
         if (result.error) {
           setError(result.error)
@@ -45,7 +43,6 @@ export const useAction = <TInput, TOutput>(
         if (result.data) {
           setData(result.data)
           options.onSuccess?.(result.data)
-          setFiledErrors(undefined)
         }
       } finally {
         setIsLoading(false)

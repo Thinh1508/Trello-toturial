@@ -45,6 +45,7 @@ export const useAction = <TInput, TOutput>(
         if (result.data) {
           setData(result.data)
           options.onSuccess?.(result.data)
+          setFiledErrors(undefined)
         }
       } finally {
         setIsLoading(false)
